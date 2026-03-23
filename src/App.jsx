@@ -4,6 +4,7 @@ import cofounder from "./assets/images/cofounder.jpeg";
 import Neha from "./assets/images/Neha.jpeg";
 import Sheetal from "./assets/images/sheetal.jpeg";
 import Logo from "./assets/images/logo.jpeg";
+import swati from "./assets/images/swati.jpeg";
 
 /* ═══════════════════════════════════════════════════
    GLOBAL STYLES
@@ -190,609 +191,82 @@ body{font-family:var(--font-b);background:var(--cream);color:var(--ink);overflow
 /* ════════════════════════════════════════════════
    FOUNDER / CO-FOUNDER SHARED STYLES
 ════════════════════════════════════════════════ */
-.founder-section{
-  padding:100px 5%;
-  background:var(--cream);
-  position:relative;
-  overflow:hidden;
-}
-.founder-section::before{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:
-    radial-gradient(ellipse 60% 70% at 0% 50%, rgba(21,88,214,.05) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 60% at 100% 50%, rgba(245,96,10,.05) 0%, transparent 60%);
-  pointer-events:none;
-}
-.founder-section::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  background-image:radial-gradient(circle, rgba(21,88,214,.07) 1px, transparent 1px);
-  background-size:36px 36px;
-  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
-  pointer-events:none;
-  z-index:0;
-}
-
-.cofounder-section{
-  padding:100px 5%;
-  position:relative;
-  overflow:hidden;
-  background:var(--mist);
-}
-.cofounder-section::before{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:
-    radial-gradient(ellipse 60% 70% at 100% 50%, rgba(245,96,10,.06) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 60% at 0% 50%, rgba(21,88,214,.06) 0%, transparent 60%);
-  pointer-events:none;
-}
-.cofounder-section::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  background-image:radial-gradient(circle, rgba(245,96,10,.07) 1px, transparent 1px);
-  background-size:36px 36px;
-  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
-  pointer-events:none;
-  z-index:0;
-}
-
-.founder-inner{
-  max-width:1200px;
-  margin:0 auto;
-  display:grid;
-  grid-template-columns:1fr 1.35fr;
-  gap:72px;
-  align-items:center;
-  position:relative;
-  z-index:1;
-}
-
-.founder-inner-reverse{
-  max-width:1200px;
-  margin:0 auto;
-  display:grid;
-  grid-template-columns:1.35fr 1fr;
-  gap:72px;
-  align-items:center;
-  position:relative;
-  z-index:1;
-}
-
-.founder-img-col{
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
-.founder-ring{
-  position:absolute;
-  width:400px;
-  height:400px;
-  border-radius:50%;
-  border:1.5px dashed rgba(21,88,214,.18);
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  animation:slowSpin 28s linear infinite;
-}
-.founder-ring-2{
-  position:absolute;
-  width:320px;
-  height:320px;
-  border-radius:50%;
-  border:1px solid rgba(245,96,10,.12);
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  animation:slowSpin 20s linear infinite reverse;
-}
-.cofounder-ring{
-  position:absolute;
-  width:400px;
-  height:400px;
-  border-radius:50%;
-  border:1.5px dashed rgba(245,96,10,.18);
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  animation:slowSpin 28s linear infinite;
-}
-.cofounder-ring-2{
-  position:absolute;
-  width:320px;
-  height:320px;
-  border-radius:50%;
-  border:1px solid rgba(21,88,214,.12);
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  animation:slowSpin 20s linear infinite reverse;
-}
+.founder-section{padding:100px 5%;background:var(--cream);position:relative;overflow:hidden;}
+.founder-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 0% 50%, rgba(21,88,214,.05) 0%, transparent 60%),radial-gradient(ellipse 50% 60% at 100% 50%, rgba(245,96,10,.05) 0%, transparent 60%);pointer-events:none;}
+.founder-section::after{content:'';position:absolute;inset:0;background-image:radial-gradient(circle, rgba(21,88,214,.07) 1px, transparent 1px);background-size:36px 36px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);pointer-events:none;z-index:0;}
+.cofounder-section{padding:100px 5%;position:relative;overflow:hidden;background:var(--mist);}
+.cofounder-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 100% 50%, rgba(245,96,10,.06) 0%, transparent 60%),radial-gradient(ellipse 50% 60% at 0% 50%, rgba(21,88,214,.06) 0%, transparent 60%);pointer-events:none;}
+.cofounder-section::after{content:'';position:absolute;inset:0;background-image:radial-gradient(circle, rgba(245,96,10,.07) 1px, transparent 1px);background-size:36px 36px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);pointer-events:none;z-index:0;}
+.founder-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.35fr;gap:72px;align-items:center;position:relative;z-index:1;}
+.founder-inner-reverse{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.35fr 1fr;gap:72px;align-items:center;position:relative;z-index:1;}
+.founder-img-col{position:relative;display:flex;flex-direction:column;align-items:center;}
+.founder-ring{position:absolute;width:400px;height:400px;border-radius:50%;border:1.5px dashed rgba(21,88,214,.18);top:50%;left:50%;transform:translate(-50%,-50%);animation:slowSpin 28s linear infinite;}
+.founder-ring-2{position:absolute;width:320px;height:320px;border-radius:50%;border:1px solid rgba(245,96,10,.12);top:50%;left:50%;transform:translate(-50%,-50%);animation:slowSpin 20s linear infinite reverse;}
+.cofounder-ring{position:absolute;width:400px;height:400px;border-radius:50%;border:1.5px dashed rgba(245,96,10,.18);top:50%;left:50%;transform:translate(-50%,-50%);animation:slowSpin 28s linear infinite;}
+.cofounder-ring-2{position:absolute;width:320px;height:320px;border-radius:50%;border:1px solid rgba(21,88,214,.12);top:50%;left:50%;transform:translate(-50%,-50%);animation:slowSpin 20s linear infinite reverse;}
 @keyframes slowSpin{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
-
-.founder-blob{
-  position:absolute;
-  width:260px;
-  height:260px;
-  border-radius:50%;
-  background:radial-gradient(circle, rgba(21,88,214,.18) 0%, transparent 70%);
-  filter:blur(40px);
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  pointer-events:none;
-}
-.cofounder-blob{
-  position:absolute;
-  width:260px;
-  height:260px;
-  border-radius:50%;
-  background:radial-gradient(circle, rgba(245,96,10,.15) 0%, transparent 70%);
-  filter:blur(40px);
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  pointer-events:none;
-}
-
-.founder-photo-wrap{
-  position:relative;
-  width:260px;
-  height:260px;
-  border-radius:28px;
-  padding:4px;
-  background:linear-gradient(145deg, var(--blue), var(--blue2), var(--orange));
-  box-shadow:0 32px 80px rgba(21,88,214,.28), 0 8px 32px rgba(0,0,0,.12);
-  transition:transform .4s cubic-bezier(.22,.68,0,1.2), box-shadow .4s;
-}
-.founder-photo-wrap:hover{
-  transform:translateY(-8px) scale(1.02);
-  box-shadow:0 48px 100px rgba(21,88,214,.34), 0 12px 40px rgba(0,0,0,.16);
-}
-.cofounder-photo-wrap{
-  position:relative;
-  width:260px;
-  height:260px;
-  border-radius:28px;
-  padding:4px;
-  background:linear-gradient(145deg, var(--orange), var(--orange2), var(--blue2));
-  box-shadow:0 32px 80px rgba(245,96,10,.22), 0 8px 32px rgba(0,0,0,.12);
-  transition:transform .4s cubic-bezier(.22,.68,0,1.2), box-shadow .4s;
-}
-.cofounder-photo-wrap:hover{
-  transform:translateY(-8px) scale(1.02);
-  box-shadow:0 48px 100px rgba(245,96,10,.28), 0 12px 40px rgba(0,0,0,.16);
-}
-
-.founder-photo-inner{
-  width:100%;
-  height:100%;
-  border-radius:24px;
-  overflow:hidden;
-  background:var(--mist);
-}
-.founder-photo{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:top center;
-  display:block;
-  transition:transform .5s ease;
-}
-.founder-photo-wrap:hover .founder-photo,
-.cofounder-photo-wrap:hover .founder-photo{
-  transform:scale(1.04);
-}
-
-.founder-badge-1{
-  position:absolute;
-  top:-18px;
-  right:-28px;
-  background:#fff;
-  border:1.5px solid var(--border);
-  border-radius:14px;
-  padding:10px 14px;
-  box-shadow:0 8px 32px rgba(21,88,214,.16);
-  display:flex;
-  align-items:center;
-  gap:8px;
-  white-space:nowrap;
-  animation:floatY 4s ease-in-out infinite;
-}
-.founder-badge-2{
-  position:absolute;
-  bottom:-20px;
-  left:-32px;
-  background:#fff;
-  border:1.5px solid var(--border);
-  border-radius:14px;
-  padding:10px 14px;
-  box-shadow:0 8px 32px rgba(21,88,214,.16);
-  display:flex;
-  align-items:center;
-  gap:8px;
-  white-space:nowrap;
-  animation:floatY 5s ease-in-out infinite;
-  animation-delay:2.5s;
-}
-.fb-ico{
-  width:30px;height:30px;
-  border-radius:9px;
-  display:flex;align-items:center;justify-content:center;
-  font-size:.9rem;flex-shrink:0;
-}
+.founder-blob{position:absolute;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle, rgba(21,88,214,.18) 0%, transparent 70%);filter:blur(40px);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
+.cofounder-blob{position:absolute;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle, rgba(245,96,10,.15) 0%, transparent 70%);filter:blur(40px);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
+.founder-photo-wrap{position:relative;width:260px;height:260px;border-radius:28px;padding:4px;background:linear-gradient(145deg, var(--blue), var(--blue2), var(--orange));box-shadow:0 32px 80px rgba(21,88,214,.28), 0 8px 32px rgba(0,0,0,.12);transition:transform .4s cubic-bezier(.22,.68,0,1.2), box-shadow .4s;}
+.founder-photo-wrap:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 48px 100px rgba(21,88,214,.34), 0 12px 40px rgba(0,0,0,.16);}
+.cofounder-photo-wrap{position:relative;width:260px;height:260px;border-radius:28px;padding:4px;background:linear-gradient(145deg, var(--orange), var(--orange2), var(--blue2));box-shadow:0 32px 80px rgba(245,96,10,.22), 0 8px 32px rgba(0,0,0,.12);transition:transform .4s cubic-bezier(.22,.68,0,1.2), box-shadow .4s;}
+.cofounder-photo-wrap:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 48px 100px rgba(245,96,10,.28), 0 12px 40px rgba(0,0,0,.16);}
+.founder-photo-inner{width:100%;height:100%;border-radius:24px;overflow:hidden;background:var(--mist);}
+.founder-photo{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .5s ease;}
+.founder-photo-wrap:hover .founder-photo,.cofounder-photo-wrap:hover .founder-photo{transform:scale(1.04);}
+.founder-badge-1{position:absolute;top:-18px;right:-28px;background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:10px 14px;box-shadow:0 8px 32px rgba(21,88,214,.16);display:flex;align-items:center;gap:8px;white-space:nowrap;animation:floatY 4s ease-in-out infinite;}
+.founder-badge-2{position:absolute;bottom:-20px;left:-32px;background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:10px 14px;box-shadow:0 8px 32px rgba(21,88,214,.16);display:flex;align-items:center;gap:8px;white-space:nowrap;animation:floatY 5s ease-in-out infinite;animation-delay:2.5s;}
+.fb-ico{width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;}
 .fb-val{font-family:var(--font-h);font-size:.92rem;font-weight:800;color:var(--ink);line-height:1.1}
 .fb-lbl{font-size:.65rem;color:#88a;font-weight:500;margin-top:1px}
-
-.founder-nameplate{
-  margin-top:28px;
-  text-align:center;
-  position:relative;
-  z-index:2;
-}
-.founder-name{
-  font-family:var(--font-h);
-  font-size:1.35rem;
-  font-weight:800;
-  color:var(--ink);
-  margin-bottom:6px;
-  letter-spacing:-.01em;
-}
-.founder-role-pill{
-  display:inline-flex;
-  align-items:center;
-  gap:7px;
-  background:linear-gradient(135deg,var(--blue),var(--blue2));
-  color:#fff;
-  border-radius:50px;
-  padding:6px 18px;
-  font-size:.78rem;
-  font-weight:700;
-  letter-spacing:.06em;
-  text-transform:uppercase;
-  box-shadow:0 4px 16px rgba(21,88,214,.3);
-  margin-bottom:14px;
-}
-.cofounder-role-pill{
-  display:inline-flex;
-  align-items:center;
-  gap:7px;
-  background:linear-gradient(135deg,var(--orange),var(--orange2));
-  color:#fff;
-  border-radius:50px;
-  padding:6px 18px;
-  font-size:.78rem;
-  font-weight:700;
-  letter-spacing:.06em;
-  text-transform:uppercase;
-  box-shadow:0 4px 16px rgba(245,96,10,.3);
-  margin-bottom:14px;
-}
-.founder-role-dot{
-  width:6px;height:6px;
-  background:rgba(255,255,255,.6);
-  border-radius:50%;
-}
-.founder-socials{
-  display:flex;
-  gap:8px;
-  justify-content:center;
-  margin-top:10px;
-}
-.founder-soc-btn{
-  width:36px;height:36px;
-  border-radius:10px;
-  border:1.5px solid var(--border);
-  background:#fff;
-  display:flex;align-items:center;justify-content:center;
-  cursor:pointer;
-  transition:all .22s;
-  color:#667;
-}
-.founder-soc-btn:hover{
-  background:linear-gradient(135deg,var(--blue),var(--blue2));
-  border-color:transparent;
-  color:#fff;
-  transform:translateY(-3px);
-  box-shadow:0 6px 18px rgba(21,88,214,.28);
-}
-.cofounder-soc-btn{
-  width:36px;height:36px;
-  border-radius:10px;
-  border:1.5px solid var(--border);
-  background:#fff;
-  display:flex;align-items:center;justify-content:center;
-  cursor:pointer;
-  transition:all .22s;
-  color:#667;
-}
-.cofounder-soc-btn:hover{
-  background:linear-gradient(135deg,var(--orange),var(--orange2));
-  border-color:transparent;
-  color:#fff;
-  transform:translateY(-3px);
-  box-shadow:0 6px 18px rgba(245,96,10,.28);
-}
-
-.founder-content-col{
-  display:flex;
-  flex-direction:column;
-  gap:0;
-}
-.founder-eyebrow{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  font-size:.74rem;
-  font-weight:800;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-  color:var(--orange);
-  margin-bottom:18px;
-}
-.founder-eyebrow::before{
-  content:'';
-  width:20px;height:2px;
-  background:var(--orange);
-  border-radius:2px;
-}
-.cofounder-eyebrow{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  font-size:.74rem;
-  font-weight:800;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-  color:var(--blue);
-  margin-bottom:18px;
-}
-.cofounder-eyebrow::before{
-  content:'';
-  width:20px;height:2px;
-  background:var(--blue);
-  border-radius:2px;
-}
-.founder-headline{
-  font-family:var(--font-h);
-  font-size:clamp(1.9rem,3.2vw,2.6rem);
-  font-weight:800;
-  color:var(--ink);
-  line-height:1.12;
-  margin-bottom:22px;
-}
-.founder-headline span{
-  background:linear-gradient(135deg,var(--blue),var(--blue2),var(--orange));
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-
-.founder-quote{
-  position:relative;
-  margin:0 0 28px;
-  padding:22px 24px 22px 32px;
-  background:linear-gradient(135deg, rgba(21,88,214,.05), rgba(91,158,255,.07));
-  border-left:3px solid var(--blue);
-  border-radius:0 16px 16px 0;
-}
-.cofounder-quote{
-  position:relative;
-  margin:0 0 28px;
-  padding:22px 24px 22px 32px;
-  background:linear-gradient(135deg, rgba(245,96,10,.05), rgba(255,133,51,.07));
-  border-left:3px solid var(--orange);
-  border-radius:0 16px 16px 0;
-}
-.founder-quote-mark{
-  font-family:Georgia,serif;
-  font-size:3.6rem;
-  line-height:.5;
-  color:rgba(21,88,214,.18);
-  display:block;
-  margin-bottom:6px;
-}
-.cofounder-quote-mark{
-  font-family:Georgia,serif;
-  font-size:3.6rem;
-  line-height:.5;
-  color:rgba(245,96,10,.18);
-  display:block;
-  margin-bottom:6px;
-}
-.founder-quote-text{
-  font-size:1.05rem;
-  font-style:italic;
-  color:#334;
-  line-height:1.65;
-  font-weight:400;
-}
-
-.founder-body{
-  font-size:.96rem;
-  line-height:1.78;
-  color:#556;
-  font-weight:300;
-  margin-bottom:22px;
-}
-.founder-body strong{
-  color:var(--ink);
-  font-weight:600;
-}
-
-.founder-stats-row{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-  margin:28px 0 32px;
-}
-.founder-stat{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  padding:18px 22px;
-  background:#fff;
-  border:1.5px solid var(--border);
-  border-radius:18px;
-  min-width:100px;
-  flex:1;
-  transition:all .25s;
-  box-shadow:0 2px 12px rgba(21,88,214,.05);
-}
-.founder-stat:hover{
-  border-color:rgba(21,88,214,.3);
-  box-shadow:0 8px 32px rgba(21,88,214,.12);
-  transform:translateY(-3px);
-}
-.founder-stat-val{
-  font-family:var(--font-h);
-  font-size:1.6rem;
-  font-weight:800;
-  background:linear-gradient(135deg,var(--blue),var(--orange));
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
-  line-height:1;
-  margin-bottom:5px;
-}
-.founder-stat-lbl{
-  font-size:.72rem;
-  font-weight:600;
-  color:#88a;
-  text-align:center;
-  text-transform:uppercase;
-  letter-spacing:.05em;
-  line-height:1.3;
-}
-
-.founder-tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  margin-bottom:32px;
-}
-.founder-tag{
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
-  font-size:.78rem;
-  font-weight:700;
-  padding:7px 14px;
-  border-radius:50px;
-  border:1.5px solid var(--border);
-  color:var(--blue);
-  background:rgba(21,88,214,.04);
-  transition:all .2s;
-}
-.founder-tag:hover{
-  background:rgba(21,88,214,.08);
-  border-color:rgba(21,88,214,.3);
-  transform:translateY(-2px);
-}
-.cofounder-tag{
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
-  font-size:.78rem;
-  font-weight:700;
-  padding:7px 14px;
-  border-radius:50px;
-  border:1.5px solid rgba(245,96,10,.2);
-  color:var(--orange);
-  background:rgba(245,96,10,.04);
-  transition:all .2s;
-}
-.cofounder-tag:hover{
-  background:rgba(245,96,10,.09);
-  border-color:rgba(245,96,10,.35);
-  transform:translateY(-2px);
-}
-.founder-tag-dot{
-  width:6px;height:6px;
-  border-radius:50%;
-  background:var(--orange);
-}
-.cofounder-tag-dot{
-  width:6px;height:6px;
-  border-radius:50%;
-  background:var(--blue);
-}
-
-.founder-cta-row{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  flex-wrap:wrap;
-}
-
-.founder-divider{
-  width:60px;height:3px;
-  border-radius:3px;
-  background:linear-gradient(to right,var(--blue),var(--orange));
-  margin-bottom:22px;
-}
-.cofounder-divider{
-  width:60px;height:3px;
-  border-radius:3px;
-  background:linear-gradient(to right,var(--orange),var(--blue));
-  margin-bottom:22px;
-}
-
-.team-connector{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:20px;
-  padding:0 5%;
-  background:var(--cream);
-  position:relative;
-  z-index:1;
-}
-.team-connector-line{
-  flex:1;
-  height:1px;
-  background:linear-gradient(to right, transparent, var(--border), transparent);
-  max-width:300px;
-}
-.team-connector-pill{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  background:#fff;
-  border:1.5px solid var(--border);
-  border-radius:50px;
-  padding:10px 24px;
-  box-shadow:0 4px 20px rgba(21,88,214,.07);
-}
-.team-connector-pill span{
-  font-family:var(--font-h);
-  font-size:.78rem;
-  font-weight:800;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  color:var(--ink);
-}
-.team-connector-dot{
-  width:7px;height:7px;
-  border-radius:50%;
-  background:var(--orange);
-}
+.founder-nameplate{margin-top:28px;text-align:center;position:relative;z-index:2;}
+.founder-name{font-family:var(--font-h);font-size:1.35rem;font-weight:800;color:var(--ink);margin-bottom:6px;letter-spacing:-.01em;}
+.founder-role-pill{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;border-radius:50px;padding:6px 18px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 4px 16px rgba(21,88,214,.3);margin-bottom:14px;}
+.cofounder-role-pill{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;border-radius:50px;padding:6px 18px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 4px 16px rgba(245,96,10,.3);margin-bottom:14px;}
+.founder-role-dot{width:6px;height:6px;background:rgba(255,255,255,.6);border-radius:50%;}
+.founder-socials{display:flex;gap:8px;justify-content:center;margin-top:10px;}
+.founder-soc-btn{width:36px;height:36px;border-radius:10px;border:1.5px solid var(--border);background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .22s;color:#667;}
+.founder-soc-btn:hover{background:linear-gradient(135deg,var(--blue),var(--blue2));border-color:transparent;color:#fff;transform:translateY(-3px);box-shadow:0 6px 18px rgba(21,88,214,.28);}
+.cofounder-soc-btn{width:36px;height:36px;border-radius:10px;border:1.5px solid var(--border);background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .22s;color:#667;}
+.cofounder-soc-btn:hover{background:linear-gradient(135deg,var(--orange),var(--orange2));border-color:transparent;color:#fff;transform:translateY(-3px);box-shadow:0 6px 18px rgba(245,96,10,.28);}
+.founder-content-col{display:flex;flex-direction:column;gap:0;}
+.founder-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.74rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin-bottom:18px;}
+.founder-eyebrow::before{content:'';width:20px;height:2px;background:var(--orange);border-radius:2px;}
+.cofounder-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.74rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:18px;}
+.cofounder-eyebrow::before{content:'';width:20px;height:2px;background:var(--blue);border-radius:2px;}
+.founder-headline{font-family:var(--font-h);font-size:clamp(1.9rem,3.2vw,2.6rem);font-weight:800;color:var(--ink);line-height:1.12;margin-bottom:22px;}
+.founder-headline span{background:linear-gradient(135deg,var(--blue),var(--blue2),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.founder-quote{position:relative;margin:0 0 28px;padding:22px 24px 22px 32px;background:linear-gradient(135deg, rgba(21,88,214,.05), rgba(91,158,255,.07));border-left:3px solid var(--blue);border-radius:0 16px 16px 0;}
+.cofounder-quote{position:relative;margin:0 0 28px;padding:22px 24px 22px 32px;background:linear-gradient(135deg, rgba(245,96,10,.05), rgba(255,133,51,.07));border-left:3px solid var(--orange);border-radius:0 16px 16px 0;}
+.founder-quote-mark{font-family:Georgia,serif;font-size:3.6rem;line-height:.5;color:rgba(21,88,214,.18);display:block;margin-bottom:6px;}
+.cofounder-quote-mark{font-family:Georgia,serif;font-size:3.6rem;line-height:.5;color:rgba(245,96,10,.18);display:block;margin-bottom:6px;}
+.founder-quote-text{font-size:1.05rem;font-style:italic;color:#334;line-height:1.65;font-weight:400;}
+.founder-body{font-size:.96rem;line-height:1.78;color:#556;font-weight:300;margin-bottom:22px;}
+.founder-body strong{color:var(--ink);font-weight:600;}
+.founder-stats-row{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0 32px;}
+.founder-stat{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px 22px;background:#fff;border:1.5px solid var(--border);border-radius:18px;min-width:100px;flex:1;transition:all .25s;box-shadow:0 2px 12px rgba(21,88,214,.05);}
+.founder-stat:hover{border-color:rgba(21,88,214,.3);box-shadow:0 8px 32px rgba(21,88,214,.12);transform:translateY(-3px);}
+.founder-stat-val{font-family:var(--font-h);font-size:1.6rem;font-weight:800;background:linear-gradient(135deg,var(--blue),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:5px;}
+.founder-stat-lbl{font-size:.72rem;font-weight:600;color:#88a;text-align:center;text-transform:uppercase;letter-spacing:.05em;line-height:1.3;}
+.founder-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px;}
+.founder-tag{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;padding:7px 14px;border-radius:50px;border:1.5px solid var(--border);color:var(--blue);background:rgba(21,88,214,.04);transition:all .2s;}
+.founder-tag:hover{background:rgba(21,88,214,.08);border-color:rgba(21,88,214,.3);transform:translateY(-2px);}
+.cofounder-tag{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;padding:7px 14px;border-radius:50px;border:1.5px solid rgba(245,96,10,.2);color:var(--orange);background:rgba(245,96,10,.04);transition:all .2s;}
+.cofounder-tag:hover{background:rgba(245,96,10,.09);border-color:rgba(245,96,10,.35);transform:translateY(-2px);}
+.founder-tag-dot{width:6px;height:6px;border-radius:50%;background:var(--orange);}
+.cofounder-tag-dot{width:6px;height:6px;border-radius:50%;background:var(--blue);}
+.founder-cta-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.founder-divider{width:60px;height:3px;border-radius:3px;background:linear-gradient(to right,var(--blue),var(--orange));margin-bottom:22px;}
+.cofounder-divider{width:60px;height:3px;border-radius:3px;background:linear-gradient(to right,var(--orange),var(--blue));margin-bottom:22px;}
+.team-connector{display:flex;align-items:center;justify-content:center;gap:20px;padding:0 5%;background:var(--cream);position:relative;z-index:1;}
+.team-connector-line{flex:1;height:1px;background:linear-gradient(to right, transparent, var(--border), transparent);max-width:300px;}
+.team-connector-pill{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--border);border-radius:50px;padding:10px 24px;box-shadow:0 4px 20px rgba(21,88,214,.07);}
+.team-connector-pill span{font-family:var(--font-h);font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);}
+.team-connector-dot{width:7px;height:7px;border-radius:50%;background:var(--orange);}
 
 @media(max-width:960px){
-  .founder-inner,
-  .founder-inner-reverse{
-    grid-template-columns:1fr;
-    gap:52px;
-    text-align:center;
-  }
-  .founder-inner-reverse .founder-content-col{ order:-1; }
+  .founder-inner,.founder-inner-reverse{grid-template-columns:1fr;gap:52px;text-align:center;}
+  .founder-inner-reverse .founder-content-col{order:-1;}
   .founder-img-col{align-items:center}
   .founder-eyebrow,.cofounder-eyebrow{justify-content:center}
   .founder-quote,.cofounder-quote{text-align:left}
@@ -873,9 +347,7 @@ body{font-family:var(--font-b);background:var(--cream);color:var(--ink);overflow
 .btn-ghost2:hover{background:rgba(255,255,255,.2)}
 .cta-note{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.6);font-size:.78rem}
 
-/* ════════════════════════════════════════════════
-   REDESIGNED FOOTER
-════════════════════════════════════════════════ */
+/* FOOTER */
 .footer{background:var(--ink);position:relative;overflow:hidden}
 .footer::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 100%, rgba(21,88,214,.18) 0%, transparent 60%),radial-gradient(ellipse 50% 40% at 10% 0%, rgba(245,96,10,.1) 0%, transparent 55%);pointer-events:none}
 .footer-accent{height:3px;background:linear-gradient(to right, var(--orange), var(--blue2), var(--orange));background-size:200% 100%;animation:gshift 6s ease infinite}
@@ -925,6 +397,233 @@ body{font-family:var(--font-b);background:var(--cream);color:var(--ink);overflow
 .footer-status-dot{width:7px;height:7px;background:#22c55e;border-radius:50%;box-shadow:0 0 0 3px rgba(34,197,94,.2);animation:ping 2s infinite}
 @media(max-width:900px){.footer-upper{grid-template-columns:1fr;gap:36px}.footer-links{grid-template-columns:1fr 1fr;gap:32px}.footer-bottom{flex-direction:column;align-items:flex-start;gap:12px}}
 @media(max-width:600px){.footer-links{grid-template-columns:1fr}.footer-nl-form{flex-direction:column}.footer-bottom-right{flex-wrap:wrap;gap:10px}}
+
+/* ════════════════════════════════════════════════
+   BOOKING MODAL STYLES
+════════════════════════════════════════════════ */
+.bm-overlay{
+  position:fixed;inset:0;z-index:9000;
+  display:flex;align-items:center;justify-content:center;
+  padding:20px;
+  background:rgba(7,17,43,.75);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  animation:bmFadeIn .22s ease both;
+}
+@keyframes bmFadeIn{from{opacity:0}to{opacity:1}}
+
+.bm-box{
+  position:relative;
+  width:100%;max-width:540px;
+  background:#fff;
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:0 48px 120px rgba(7,17,43,.4),0 8px 40px rgba(0,0,0,.18);
+  animation:bmSlideUp .32s cubic-bezier(.22,.68,0,1.2) both;
+  max-height:92vh;
+  overflow-y:auto;
+}
+@keyframes bmSlideUp{from{opacity:0;transform:translateY(44px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+.bm-header{
+  position:relative;
+  padding:38px 38px 30px;
+  overflow:hidden;
+}
+.bm-header-bg{position:absolute;inset:0;pointer-events:none;}
+.bm-close{
+  position:absolute;top:16px;right:16px;
+  width:38px;height:38px;border-radius:50%;border:none;
+  background:rgba(255,255,255,.16);backdrop-filter:blur(8px);
+  color:#fff;font-size:1rem;line-height:1;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:background .2s,transform .22s;z-index:10;
+}
+.bm-close:hover{background:rgba(255,255,255,.3);transform:rotate(90deg) scale(1.08)}
+
+.bm-avatar-row{display:flex;align-items:center;gap:16px;margin-bottom:18px;position:relative;z-index:1;}
+.bm-avatar{
+  width:70px;height:70px;border-radius:18px;overflow:hidden;flex-shrink:0;
+  border:3px solid rgba(255,255,255,.35);
+  box-shadow:0 8px 28px rgba(0,0,0,.22);
+}
+.bm-avatar img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.bm-avatar-info{}
+.bm-header-label{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.22);
+  border-radius:50px;padding:4px 12px;
+  font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(255,255,255,.9);margin-bottom:6px;
+}
+.bm-header-label-dot{
+  width:6px;height:6px;border-radius:50%;background:#4ade80;
+  box-shadow:0 0 0 3px rgba(74,222,128,.22);animation:ping 2s infinite;
+}
+.bm-header-name{font-family:var(--font-h);font-size:1.05rem;font-weight:800;color:#fff;line-height:1.1}
+.bm-header-role{font-size:.75rem;color:rgba(255,255,255,.6);margin-top:2px}
+
+.bm-header h2{
+  font-family:var(--font-h);
+  font-size:1.55rem;font-weight:800;color:#fff;line-height:1.12;
+  margin-bottom:8px;position:relative;z-index:1;
+}
+.bm-header p{font-size:.83rem;color:rgba(255,255,255,.68);line-height:1.55;position:relative;z-index:1;}
+
+.bm-header-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;position:relative;z-index:1;}
+.bm-chip{
+  display:inline-flex;align-items:center;gap:5px;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);
+  border-radius:50px;padding:4px 12px;
+  font-size:.7rem;font-weight:700;color:rgba(255,255,255,.85);
+}
+
+.bm-body{padding:28px 36px 34px}
+
+.bm-section-label{
+  font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:#8899bb;margin-bottom:12px;
+  display:flex;align-items:center;gap:8px;
+}
+.bm-section-label::before{
+  content:'';width:14px;height:2px;border-radius:2px;flex-shrink:0;
+}
+.bm-section-label.blue::before{background:var(--blue)}
+.bm-section-label.orange::before{background:var(--orange)}
+
+.bm-date-row{
+  display:flex;align-items:center;gap:12px;
+  background:linear-gradient(135deg,var(--mist),rgba(21,88,214,.05));
+  border:1.5px solid var(--border);border-radius:14px;
+  padding:12px 16px;margin-bottom:22px;
+  font-size:.87rem;font-weight:600;color:var(--ink);
+}
+.bm-date-ico{
+  width:36px;height:36px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;
+}
+
+.bm-slots{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;}
+.bm-slot{
+  position:relative;display:flex;align-items:center;gap:10px;
+  padding:13px 15px;border-radius:13px;border:1.5px solid var(--border);
+  background:#fafbff;cursor:pointer;
+  transition:all .2s cubic-bezier(.22,.68,0,1.2);
+  text-align:left;font-family:var(--font-b);
+  outline:none;
+}
+.bm-slot:hover{
+  border-color:rgba(21,88,214,.3);background:rgba(21,88,214,.03);
+  transform:translateY(-2px);box-shadow:0 6px 20px rgba(21,88,214,.09);
+}
+.bm-slot.sel-blue{
+  border-color:var(--blue);
+  background:linear-gradient(135deg,rgba(21,88,214,.06),rgba(91,158,255,.08));
+  box-shadow:0 4px 18px rgba(21,88,214,.14);
+}
+.bm-slot.sel-orange{
+  border-color:var(--orange);
+  background:linear-gradient(135deg,rgba(245,96,10,.06),rgba(255,133,51,.08));
+  box-shadow:0 4px 18px rgba(245,96,10,.13);
+}
+.bm-slot-radio{
+  width:18px;height:18px;border-radius:50%;border:2px solid #ccd4e8;
+  flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  transition:all .18s;
+}
+.bm-slot.sel-blue .bm-slot-radio{border-color:var(--blue);background:var(--blue);box-shadow:0 0 0 3px rgba(21,88,214,.18);}
+.bm-slot.sel-orange .bm-slot-radio{border-color:var(--orange);background:var(--orange);box-shadow:0 0 0 3px rgba(245,96,10,.18);}
+.bm-slot-dot{width:6px;height:6px;border-radius:50%;background:#fff;opacity:0;transform:scale(0);transition:all .16s;}
+.bm-slot.sel-blue .bm-slot-dot,.bm-slot.sel-orange .bm-slot-dot{opacity:1;transform:scale(1)}
+.bm-slot-txt{flex:1;min-width:0;}
+.bm-slot-time{font-size:.84rem;font-weight:700;color:var(--ink);line-height:1.2}
+.bm-slot-dur{font-size:.68rem;color:#99a;font-weight:500;margin-top:2px}
+.bm-slot-check{
+  font-size:.65rem;font-weight:800;padding:2px 7px;border-radius:8px;
+  white-space:nowrap;flex-shrink:0;
+}
+.bm-slot.sel-blue .bm-slot-check{background:rgba(21,88,214,.1);color:var(--blue)}
+.bm-slot.sel-orange .bm-slot-check{background:rgba(245,96,10,.1);color:var(--orange)}
+
+.bm-notice{
+  display:flex;align-items:flex-start;gap:10px;
+  background:linear-gradient(135deg,rgba(245,158,11,.05),rgba(251,191,36,.06));
+  border:1px solid rgba(245,158,11,.18);border-radius:12px;
+  padding:12px 14px;margin-bottom:22px;
+  font-size:.79rem;color:#92400e;line-height:1.55;
+}
+.bm-notice-ico{font-size:.95rem;flex-shrink:0;margin-top:1px}
+
+.bm-cta{
+  width:100%;padding:15px 20px;border:none;border-radius:14px;
+  font-family:var(--font-b);font-size:.97rem;font-weight:800;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  transition:all .25s;letter-spacing:.01em;
+}
+.bm-cta:disabled{opacity:.4;cursor:not-allowed;transform:none!important;box-shadow:none!important;filter:grayscale(.2)}
+.bm-cta-blue{
+  background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;
+  box-shadow:0 8px 28px rgba(21,88,214,.3);
+}
+.bm-cta-blue:not(:disabled):hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(21,88,214,.44);}
+.bm-cta-orange{
+  background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;
+  box-shadow:0 8px 28px rgba(245,96,10,.3);
+}
+.bm-cta-orange:not(:disabled):hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(245,96,10,.44);}
+
+.bm-footer-note{
+  display:flex;align-items:center;justify-content:center;gap:6px;
+  margin-top:14px;font-size:.74rem;color:#aabbcc;text-align:center;
+}
+.bm-divider{height:1px;background:var(--border);margin:20px 0;}
+
+@media(max-width:500px){
+  .bm-box{border-radius:22px}
+  .bm-header{padding:28px 22px 22px}
+  .bm-body{padding:22px 22px 28px}
+  .bm-slots{grid-template-columns:1fr}
+  .bm-header h2{font-size:1.28rem}
+}
+
+/* CONTACT US SECTION */
+.contact-section{padding:96px 5%;background:var(--cream);position:relative;overflow:hidden}
+.contact-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 70% at 5% 50%,rgba(21,88,214,.05) 0%,transparent 65%),radial-gradient(ellipse 45% 60% at 95% 50%,rgba(245,96,10,.05) 0%,transparent 65%);pointer-events:none}
+.ct-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1}
+.ct-layout{display:grid;grid-template-columns:1fr 1.55fr;gap:52px;align-items:start;margin-top:52px}
+.ct-info-col{display:flex;flex-direction:column;gap:18px}
+.ct-info-card{background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start;transition:all .25s}
+.ct-info-card:hover{border-color:rgba(21,88,214,.3);box-shadow:0 8px 32px rgba(21,88,214,.08);transform:translateX(4px)}
+.ct-ic-icon{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem}
+.ct-ic-lbl{font-size:.68rem;font-weight:800;color:#88a;letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
+.ct-ic-val{font-size:.88rem;font-weight:600;color:var(--ink);line-height:1.45}
+.ct-promise{background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:22px 20px;margin-top:4px}
+.ct-pr-title{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#88a;margin-bottom:14px}
+.ct-pr-item{display:flex;align-items:center;gap:10px;font-size:.85rem;color:#556;padding:6px 0;border-bottom:1px solid var(--border)}
+.ct-pr-item:last-child{border-bottom:none}
+.ct-pr-dot{width:20px;height:20px;border-radius:7px;background:rgba(34,197,94,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.72rem;color:#16a34a}
+.ct-form-card{background:#fff;border:1.5px solid var(--border);border-radius:22px;overflow:hidden;box-shadow:0 8px 40px rgba(21,88,214,.08)}
+.ct-form-accent{height:4px;background:linear-gradient(to right,var(--blue),var(--blue2),var(--orange))}
+.ct-form-body{padding:32px 30px}
+.ct-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ct-full{grid-column:1/-1}
+.ct-field{display:flex;flex-direction:column;gap:6px}
+.ct-field label{font-size:.72rem;font-weight:700;color:#88a;letter-spacing:.06em;text-transform:uppercase}
+.ct-input{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:11px;font-family:var(--font-b);font-size:.9rem;color:var(--ink);background:#fafbff;outline:none;transition:all .2s}
+.ct-input:focus{border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px rgba(21,88,214,.06)}
+.ct-input::placeholder{color:#aab}
+.ct-select{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:11px;font-family:var(--font-b);font-size:.9rem;color:var(--ink);background:#fafbff;outline:none;transition:all .2s;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23667' stroke-width='2.5'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.ct-select:focus{border-color:var(--blue);background-color:#fff;box-shadow:0 0 0 4px rgba(21,88,214,.06)}
+.ct-textarea{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:11px;font-family:var(--font-b);font-size:.9rem;color:var(--ink);background:#fafbff;outline:none;transition:all .2s;resize:vertical;min-height:120px;line-height:1.6}
+.ct-textarea:focus{border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px rgba(21,88,214,.06)}
+.ct-textarea::placeholder,.ct-input::placeholder{color:#aab}
+.ct-other-wrap{overflow:hidden;max-height:0;opacity:0;transition:max-height .28s ease,opacity .22s;margin-top:0}
+.ct-other-wrap.open{max-height:60px;opacity:1;margin-top:10px}
+.ct-submit{width:100%;margin-top:22px;padding:14px 20px;border:none;border-radius:13px;font-family:var(--font-b);font-size:.97rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;box-shadow:0 8px 28px rgba(21,88,214,.3);transition:all .25s}
+.ct-submit:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(21,88,214,.42)}
+.ct-submit:active{transform:scale(.98)}
+.ct-note{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:12px;font-size:.73rem;color:#aab;text-align:center}
+@media(max-width:900px){.ct-layout{grid-template-columns:1fr}.ct-form-grid{grid-template-columns:1fr}}
 
 /* ════════════════════════════════
    SERVICES PAGE STYLES
@@ -1097,9 +796,7 @@ body{font-family:var(--font-b);background:var(--cream);color:var(--ink);overflow
   .svc-ind-grid{grid-template-columns:repeat(2,1fr)}
 }
 
-/* ════════════════════════════════
-   TEAM PAGE STYLES
-════════════════════════════════ */
+/* TEAM PAGE STYLES */
 .team-page{padding-top:72px}
 .team-hero{background:linear-gradient(135deg,#07112b 0%,#0f2155 55%,#1558d6 100%);padding:90px 5% 100px;text-align:center;position:relative;overflow:hidden}
 .team-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 60% at 15% 50%,rgba(245,96,10,.13) 0%,transparent 60%),radial-gradient(ellipse 50% 60% at 85% 50%,rgba(91,158,255,.18) 0%,transparent 60%)}
@@ -1113,8 +810,6 @@ body{font-family:var(--font-b);background:var(--cream);color:var(--ink);overflow
 .ths-val{font-family:var(--font-h);font-size:2rem;font-weight:800;color:#fff;line-height:1}
 .ths-val b{color:var(--orange)}
 .ths-lbl{color:rgba(255,255,255,.4);font-size:.78rem;margin-top:6px;text-transform:uppercase;letter-spacing:.06em}
-
-/* ── Team Cards (4-col grid, real photos) ── */
 .team-g{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
 .tm{border-radius:24px;overflow:hidden;background:#fff;border:1.5px solid var(--border);transition:all .35s cubic-bezier(.22,.68,0,1.2);box-shadow:0 4px 20px rgba(21,88,214,.07);display:flex;flex-direction:column}
 .tm:hover{transform:translateY(-10px);box-shadow:0 28px 70px rgba(21,88,214,.2);border-color:rgba(21,88,214,.35)}
@@ -1133,7 +828,6 @@ body{font-family:var(--font-b);background:var(--cream);color:var(--ink);overflow
 .tm-name{font-family:var(--font-h);font-weight:700;font-size:1.02rem;color:var(--ink);margin-bottom:8px}
 .tm-role{display:inline-block;font-size:.75rem;font-weight:700;padding:4px 14px;border-radius:20px;background:rgba(21,88,214,.08);color:var(--blue)}
 .tm-divider{width:32px;height:2px;background:linear-gradient(to right,var(--blue),var(--orange));border-radius:2px;margin:10px auto 0}
-
 .exp-wrap{background:var(--mist);padding:96px 5%}
 .exp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;max-width:1400px;margin:0 auto}
 .exp-card{background:#fff;border-radius:22px;padding:32px 26px;border:1.5px solid var(--border);transition:all .3s;position:relative;overflow:hidden}
@@ -1246,6 +940,161 @@ const LinkedInIcon = () => (
   </svg>
 );
 
+/* ════════════════════════════════════════════════
+   BOOKING MODAL COMPONENT
+════════════════════════════════════════════════ */
+const BookingModal = ({ isOpen, onClose, person, photo, name, role, email, slots, accentGrad, ctaClass, selClass }) => {
+  const [selected, setSelected] = useState(null);
+  const overlayRef = useRef(null);
+
+  useEffect(() => { if (isOpen) setSelected(null); }, [isOpen]);
+
+  useEffect(() => {
+    const handler = (e) => { if (e.key === "Escape") onClose(); };
+    if (isOpen) window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [isOpen, onClose]);
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [isOpen]);
+
+  if (!isOpen) return null;
+
+  const today = new Date();
+  const dateStr = today.toLocaleDateString("en-IN", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+
+  const handleBook = () => {
+    if (selected === null) return;
+    const slot = slots[selected];
+    const subject = encodeURIComponent(`Meeting Request with ${name} | ${slot.label} Slot`);
+    const isFounder = person === "founder";
+    const body = encodeURIComponent(
+      isFounder
+        ? `Dear ${name},\n\nI hope this message finds you well.\n\nI recently came across Growthmantra99 and I am genuinely impressed by the vision and the results-driven approach you are building in the B2B growth marketing space.\n\nI would love to schedule a strategy call with you to explore how Growthmantra99 can help accelerate my company's growth. I have selected the following preferred time slot:\n\n  📅 Preferred Date: ${dateStr}\n  🕐 Preferred Time: ${slot.label} (IST)\n  ⏱  Session Duration: ${slot.duration}\n\nI'm particularly interested in learning more about your ICP-led lead generation methodology and understanding how your team approaches pipeline architecture for companies like mine.\n\nKindly confirm your availability at the above time, and feel free to suggest an alternate slot if needed.\n\nLooking forward to a productive conversation.\n\nWarm regards,\n[Your Full Name]\n[Your Designation]\n[Your Company Name]\n[Your Contact Number]`
+        : `Dear ${name},\n\nI hope you're doing well.\n\nI recently discovered Growthmantra99 and I'm deeply impressed by your data-driven, accountability-focused approach to B2B growth strategy — particularly your work on revenue attribution and go-to-market execution.\n\nI'd love to connect with you for a focused strategy conversation to explore how Growthmantra99's services can create measurable impact for our organisation. I've selected the following time slot that works best for me:\n\n  📅 Preferred Date: ${dateStr}\n  🕐 Preferred Time: ${slot.label} (IST)\n  ⏱  Session Duration: ${slot.duration}\n\nI'm eager to understand your GTM strategy framework and how your Revenue Attribution system could be applied to our existing pipeline processes.\n\nPlease confirm your availability, and do let me know if another slot works better for you.\n\nLooking forward to speaking with you.\n\nBest regards,\n[Your Full Name]\n[Your Designation]\n[Your Company Name]\n[Your Contact Number]`
+    );
+    window.open(`https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}&su=${subject}&body=${body}`, "_blank");
+  };
+
+  const isBlue = selClass === "sel-blue";
+
+  return (
+    <div className="bm-overlay" ref={overlayRef} onClick={(e) => { if (e.target === overlayRef.current) onClose(); }}>
+      <div className="bm-box" role="dialog" aria-modal="true" aria-label={`Book a call with ${name}`}>
+
+        {/* ── Header ── */}
+        <div className="bm-header" style={{ background: accentGrad }}>
+          {/* decorative layers */}
+          <div className="bm-header-bg">
+            <div style={{ position:"absolute", width:280, height:280, borderRadius:"50%", top:-80, right:-60, background:"rgba(255,255,255,.07)", filter:"blur(50px)" }} />
+            <div style={{ position:"absolute", width:180, height:180, borderRadius:"50%", bottom:-50, left:10, background:"rgba(255,255,255,.05)", filter:"blur(35px)" }} />
+            <div style={{ position:"absolute", inset:0, backgroundImage:"radial-gradient(circle,rgba(255,255,255,.06) 1px,transparent 1px)", backgroundSize:"22px 22px" }} />
+            <div style={{ position:"absolute", bottom:0, left:0, right:0, height:"1px", background:"rgba(255,255,255,.12)" }} />
+          </div>
+
+          <button className="bm-close" onClick={onClose} aria-label="Close modal">✕</button>
+
+          {/* avatar + name row */}
+          <div className="bm-avatar-row">
+            <div className="bm-avatar"><img src={photo} alt={name} /></div>
+            <div className="bm-avatar-info">
+              <div className="bm-header-label"><div className="bm-header-label-dot" />Open for bookings</div>
+              <div className="bm-header-name">{name}</div>
+              <div className="bm-header-role">{role} · Growthmantra99</div>
+            </div>
+          </div>
+
+          <h2>Book a Strategy Call</h2>
+          <p>Free 30-minute consultation — no pitch, no pressure. Just an honest conversation about your B2B growth.</p>
+
+          {/* info chips */}
+          <div className="bm-header-chips">
+            <div className="bm-chip">🎯 ICP-Led Approach</div>
+            <div className="bm-chip">⚡ 30 Min · Free</div>
+            <div className="bm-chip">📅 Book via Email</div>
+          </div>
+        </div>
+
+        {/* ── Body ── */}
+        <div className="bm-body">
+
+          {/* Date display */}
+          <div className={`bm-section-label ${isBlue ? "blue" : "orange"}`}>Today's Date</div>
+          <div className="bm-date-row">
+            <div className="bm-date-ico" style={{ background: isBlue ? "linear-gradient(135deg,var(--blue),var(--blue2))" : "linear-gradient(135deg,var(--orange),var(--orange2))" }}>📅</div>
+            <div>
+              <div style={{ fontWeight:700, fontSize:".88rem", color:"var(--ink)" }}>{dateStr}</div>
+              <div style={{ fontSize:".72rem", color:"#99a", marginTop:"2px" }}>All times shown in IST (India Standard Time)</div>
+            </div>
+          </div>
+
+          {/* Slot selection */}
+          <div className={`bm-section-label ${isBlue ? "blue" : "orange"}`}>Choose Your Preferred Time Slot</div>
+          <div className="bm-slots">
+            {slots.map((slot, idx) => (
+              <button
+                key={idx}
+                className={`bm-slot${selected === idx ? ` ${selClass}` : ""}`}
+                onClick={() => setSelected(idx)}
+                type="button"
+              >
+                <div className="bm-slot-radio">
+                  <div className="bm-slot-dot" />
+                </div>
+                <div className="bm-slot-txt">
+                  <div className="bm-slot-time">{slot.label}</div>
+                  <div className="bm-slot-dur">{slot.duration}</div>
+                </div>
+                {selected === idx && (
+                  <div className="bm-slot-check">✓ Selected</div>
+                )}
+              </button>
+            ))}
+          </div>
+
+          <div className="bm-divider" />
+
+          {/* Info notice */}
+          <div className="bm-notice">
+            <div className="bm-notice-ico">💡</div>
+            <span>Clicking <strong>"Book Appointment"</strong> will open your email client with a pre-written professional message addressed to {name.split(" ")[0]}. Simply review, personalise if needed, and hit send.</span>
+          </div>
+
+          {/* CTA */}
+          <button
+            className={`bm-cta ${ctaClass}`}
+            disabled={selected === null}
+            onClick={handleBook}
+            type="button"
+          >
+            <svg width="17" height="17" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            {selected === null
+              ? "Select a Time Slot to Continue"
+              : `Book Appointment · ${slots[selected].label}`
+            }
+          </button>
+
+          <div className="bm-footer-note">
+            <svg width="12" height="12" fill="#22c55e" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Free consultation · No commitment · Cancel anytime
+          </div>
+
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/* ════════════════════════════════
+   NAV
+════════════════════════════════ */
 const Nav = ({ page, setPage }) => {
   const [sc, setSc] = useState(false), [mob, setMob] = useState(false);
   useEffect(() => { const h = () => setSc(window.scrollY > 30); window.addEventListener("scroll", h); return () => window.removeEventListener("scroll", h); }, []);
@@ -1275,9 +1124,9 @@ const Nav = ({ page, setPage }) => {
 };
 
 /* ════════════════════════════════════════════════
-   REDESIGNED FOOTER
+   FOOTER
 ════════════════════════════════════════════════ */
-const Footer = ({ setPage }) => {
+const Footer = ({ setPage, scrollToContact }) => {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
@@ -1290,9 +1139,7 @@ const Footer = ({ setPage }) => {
         <div className="footer-upper">
           <div className="footer-brand">
             <a className="footer-logo" href="#">
-              <div className="footer-logo-m">
-                <img src={Logo} alt="Growthmantra99 logo" />
-              </div>
+              <div className="footer-logo-m"><img src={Logo} alt="Growthmantra99 logo" /></div>
               <span className="footer-logo-t">Growth<b>Mantra99</b></span>
             </a>
             <p className="footer-tagline">India's dedicated B2B growth marketing agency — helping companies build scalable lead pipelines through strategic outreach, technology, and relentless execution.</p>
@@ -1319,18 +1166,18 @@ const Footer = ({ setPage }) => {
           </div>
           <div className="footer-col">
             <div className="footer-col-title">Company</div>
-            <ul>{[{ l: "About Us", fn: () => setPage("home") }, { l: "Our Team", fn: () => setPage("team") }, { l: "Case Studies" }, { l: "Blog & Insights" }, { l: "Careers" }, { l: "Contact Us" }].map((item, i) => (<li key={i}><a onClick={item.fn}>{item.l}</a></li>))}</ul>
+            <ul>{[{ l: "About Us", fn: () => setPage("home") }, { l: "Our Team", fn: () => setPage("team") }, { l: "Case Studies" }, { l: "Blog & Insights" }, { l: "Careers" }, { l: "Contact Us",  fn: scrollToContact }].map((item, i) => (<li key={i}><a onClick={item.fn}>{item.l}</a></li>))}</ul>
           </div>
           <div className="footer-col">
             <div className="footer-col-title">Get in Touch</div>
-            {[{ ico: "📍", text: "Mumbai, Maharashtra, India" }, { ico: "📞", text: "+91 98765 43210" }, { ico: "✉️", text: "hello@Growthmantra99.in" }, { ico: "🕒", text: "Mon – Sat · 9am to 7pm IST" }].map((item, i) => (
+            {[{ ico: "📍", text: "Karkend Bajar Dhanbad(Jharkhand), India" }, { ico: "📞", text: "+91 6204132195" }, { ico: "✉️", text: "growthmantra99@gmail.com" }, { ico: "🕒", text: "Mon – Sat · 9am to 7pm IST" }].map((item, i) => (
               <div className="footer-contact-item" key={i}><div className="footer-contact-icon">{item.ico}</div><span>{item.text}</span></div>
             ))}
           </div>
         </div>
         <div className="footer-bottom">
           <div className="footer-bottom-left">
-            <span className="footer-copyright">© 2024 Growthmantra99 Marketing Pvt. Ltd.</span>
+            <span className="footer-copyright">© 2026 Growthmantra99 Marketing Pvt. Ltd.</span>
             <div className="footer-legal-links">{["Privacy Policy", "Terms of Service", "Sitemap"].map(l => (<a key={l} href="#">{l}</a>))}</div>
           </div>
           <div className="footer-bottom-right">
@@ -1344,131 +1191,201 @@ const Footer = ({ setPage }) => {
 };
 
 /* ════════════════════════════════════════════════
-   FOUNDER SECTION
+   FOUNDER SECTION — with booking modal
 ════════════════════════════════════════════════ */
-const FounderSection = () => (
-  <section className="founder-section">
-    <div className="founder-inner">
-      <div className="founder-img-col">
-        <div className="founder-ring" />
-        <div className="founder-ring-2" />
-        <div className="founder-blob" />
-        <div className="founder-photo-wrap">
-          <div className="founder-photo-inner">
-            <img src={founder} alt="Founder of Growthmantra99" className="founder-photo" />
+const FounderSection = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const FOUNDER_SLOTS = [
+    { label: "8 PM – 9 PM",   duration: "60 min session" },
+    { label: "9 PM – 10 PM",  duration: "60 min session" },
+    { label: "10 PM – 11 PM", duration: "60 min session" },
+    { label: "11 PM – 12 AM", duration: "60 min session" },
+  ];
+
+  return (
+    <>
+      <section className="founder-section">
+        <div className="founder-inner">
+          <div className="founder-img-col">
+            <div className="founder-ring" />
+            <div className="founder-ring-2" />
+            <div className="founder-blob" />
+            <div className="founder-photo-wrap">
+              <div className="founder-photo-inner">
+                <img src={founder} alt="Founder of Growthmantra99" className="founder-photo" />
+              </div>
+              <div className="founder-badge-1">
+                <div className="fb-ico" style={{ background: "rgba(21,88,214,.1)" }}>🎯</div>
+                <div><div className="fb-val">B2B Specialist</div><div className="fb-lbl">Lead Generation Expert</div></div>
+              </div>
+              <div className="founder-badge-2">
+                <div className="fb-ico" style={{ background: "rgba(34,197,94,.1)" }}>⚡</div>
+                <div><div className="fb-val">500+ Deals Closed</div><div className="fb-lbl">Across Industries</div></div>
+              </div>
+            </div>
+            <div className="founder-nameplate">
+              <div className="founder-name">Shivam Sharma</div>
+              <div className="founder-role-pill"><div className="founder-role-dot" />Founder &amp; CEO</div>
+              <div className="founder-socials">
+                {[{ s: "li", label: "LinkedIn" }, { s: "tw", label: "Twitter" }, { s: "ig", label: "Instagram" }].map(({ s, label }) => (
+                  <div className="founder-soc-btn" key={s} title={label}><SocIcon s={s} /></div>
+                ))}
+              </div>
+            </div>
           </div>
-          <div className="founder-badge-1">
-            <div className="fb-ico" style={{ background: "rgba(21,88,214,.1)" }}>🎯</div>
-            <div><div className="fb-val">B2B Specialist</div><div className="fb-lbl">Lead Generation Expert</div></div>
+          <div className="founder-content-col">
+            <div className="founder-eyebrow">Meet the Founder</div>
+            <h2 className="founder-headline">The Mind Behind India's<br /><span>Most Focused B2B</span><br />Growth Engine</h2>
+            <div className="founder-divider" />
+            <div className="founder-quote">
+              <span className="founder-quote-mark">"</span>
+              <p className="founder-quote-text">Most agencies sell you traffic. We sell you conversations with decision-makers who are ready to buy — and that changes everything.</p>
+            </div>
+            <p className="founder-body">Shivam Sharma built Growthmantra99 on a single conviction: <strong>B2B companies deserve a growth partner that treats their pipeline like it's their own.</strong> After years working inside high-growth startups and enterprise sales teams across India, he saw the same pattern repeat — great products stalling because the right buyers never found them.</p>
+            <p className="founder-body">Growthmantra99 was his answer. A lean, senior-led agency where <strong>every campaign starts with your Ideal Customer Profile</strong>, every outreach sequence is built for quality over volume, and every rupee you invest is tracked back to revenue — not just clicks.</p>
+            <div className="founder-stats-row">
+              {[{ val: "2+", lbl: "Years in B2B Sales" }, { val: "10+", lbl: "Sectors Served" }, { val: "100%", lbl: "Senior Attention" }, { val: "PGDM", lbl: "Education" }].map((s, i) => (
+                <div className="founder-stat" key={i}><div className="founder-stat-val">{s.val}</div><div className="founder-stat-lbl">{s.lbl}</div></div>
+              ))}
+            </div>
+            <div className="founder-tags">
+              {["B2B Lead Generation", "Account-Based Marketing", "Outbound Strategy", "Sales Automation", "ICP Design", "Revenue Attribution", "LinkedIn Selling", "Pipeline Architecture"].map((t, i) => (
+                <span className="founder-tag" key={i}><span className="founder-tag-dot" />{t}</span>
+              ))}
+            </div>
+            <div className="founder-cta-row">
+              <button className="btn-main" onClick={() => setModalOpen(true)}>
+                <span>Book a Call with Shivam</span>
+                <svg width="14" height="14" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></svg>
+              </button>
+              <button className="btn-play">
+                <div className="play-ring"><svg width="16" height="16" fill="var(--orange)" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" /></svg></div>
+                Watch Founder Story
+              </button>
+            </div>
           </div>
-          <div className="founder-badge-2">
-            <div className="fb-ico" style={{ background: "rgba(34,197,94,.1)" }}>⚡</div>
-            <div><div className="fb-val">500+ Deals Closed</div><div className="fb-lbl">Across Industries</div></div>
-          </div>
         </div>
-        <div className="founder-nameplate">
-          <div className="founder-name">Shivam Sharma</div>
-          <div className="founder-role-pill"><div className="founder-role-dot" />Founder &amp; CEO</div>
-          <div className="founder-socials">
-            {[{ s: "li", label: "LinkedIn" }, { s: "tw", label: "Twitter" }, { s: "ig", label: "Instagram" }].map(({ s, label }) => (
-              <div className="founder-soc-btn" key={s} title={label}><SocIcon s={s} /></div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="founder-content-col">
-        <div className="founder-eyebrow">Meet the Founder</div>
-        <h2 className="founder-headline">The Mind Behind India's<br /><span>Most Focused B2B</span><br />Growth Engine</h2>
-        <div className="founder-divider" />
-        <div className="founder-quote">
-          <span className="founder-quote-mark">"</span>
-          <p className="founder-quote-text">Most agencies sell you traffic. We sell you conversations with decision-makers who are ready to buy — and that changes everything.</p>
-        </div>
-        <p className="founder-body">Shivam Sharma built Growthmantra99 on a single conviction: <strong>B2B companies deserve a growth partner that treats their pipeline like it's their own.</strong> After years working inside high-growth startups and enterprise sales teams across India, he saw the same pattern repeat — great products stalling because the right buyers never found them.</p>
-        <p className="founder-body">Growthmantra99 was his answer. A lean, senior-led agency where <strong>every campaign starts with your Ideal Customer Profile</strong>, every outreach sequence is built for quality over volume, and every rupee you invest is tracked back to revenue — not just clicks.</p>
-        <div className="founder-stats-row">
-          {[{ val: "8+", lbl: "Years in B2B Sales" }, { val: "₹50Cr+", lbl: "Pipeline Generated" }, { val: "40+", lbl: "Sectors Served" }, { val: "100%", lbl: "Senior Attention" }].map((s, i) => (
-            <div className="founder-stat" key={i}><div className="founder-stat-val">{s.val}</div><div className="founder-stat-lbl">{s.lbl}</div></div>
-          ))}
-        </div>
-        <div className="founder-tags">
-          {["B2B Lead Generation", "Account-Based Marketing", "Outbound Strategy", "Sales Automation", "ICP Design", "Revenue Attribution", "LinkedIn Selling", "Pipeline Architecture"].map((t, i) => (
-            <span className="founder-tag" key={i}><span className="founder-tag-dot" />{t}</span>
-          ))}
-        </div>
-        <div className="founder-cta-row">
-          <button className="btn-main"><span>Book a Call with Shivam</span><svg width="14" height="14" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></svg></button>
-          <button className="btn-play"><div className="play-ring"><svg width="16" height="16" fill="var(--orange)" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" /></svg></div>Watch Founder Story</button>
-        </div>
-      </div>
-    </div>
-  </section>
-);
+      </section>
+
+      <BookingModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        person="founder"
+        photo={founder}
+        name="Shivam Sharma"
+        role="Founder & CEO"
+        email="shivamsharmakarkend123@gmail.com"
+        slots={FOUNDER_SLOTS}
+        accentGrad="linear-gradient(135deg,#07112b 0%,#1558d6 55%,#2272ff 100%)"
+        ctaClass="bm-cta-blue"
+        selClass="sel-blue"
+      />
+    </>
+  );
+};
 
 /* ════════════════════════════════════════════════
-   CO-FOUNDER SECTION
+   CO-FOUNDER SECTION — with booking modal
 ════════════════════════════════════════════════ */
-const CoFounderSection = () => (
-  <section className="cofounder-section">
-    <div className="founder-inner-reverse">
-      <div className="founder-content-col">
-        <div className="cofounder-eyebrow">Meet the Co-Founder</div>
-        <h2 className="founder-headline">The Strategist Who Turns<br /><span>Data Into Decisions</span><br />&amp; Deals Into Growth</h2>
-        <div className="cofounder-divider" />
-        <div className="cofounder-quote">
-          <span className="cofounder-quote-mark">"</span>
-          <p className="founder-quote-text">A great B2B strategy isn't built on gut instinct — it's built on the right data, the right accounts, and the relentless will to execute.</p>
-        </div>
-        <p className="founder-body">Shyam Jha co-founded Growthmantra99 with a clear mandate: <strong>make B2B marketing accountable, measurable, and genuinely effective.</strong> With a background spanning enterprise technology sales, growth analytics, and go-to-market strategy at some of India's fastest-scaling B2B companies, Shyam brings a rare combination of analytical rigour and creative execution to every client engagement.</p>
-        <p className="founder-body">He architected Growthmantra99's proprietary <strong>Revenue Attribution Framework</strong> — the system that connects every outreach touchpoint back to closed-won revenue.</p>
-        <div className="founder-stats-row">
-          {[{ val: "6+", lbl: "Years in Growth Strategy" }, { val: "₹30Cr+", lbl: "Revenue Attributed" }, { val: "25+", lbl: "GTM Launches Led" }, { val: "Zero", lbl: "Vanity Metrics Reported" }].map((s, i) => (
-            <div className="founder-stat" key={i}><div className="founder-stat-val">{s.val}</div><div className="founder-stat-lbl">{s.lbl}</div></div>
-          ))}
-        </div>
-        <div className="founder-tags">
-          {["Revenue Attribution", "GTM Strategy", "Data Analytics", "ABM Architecture", "Marketing Ops", "CRM Systems", "Demand Generation", "Growth Reporting"].map((t, i) => (
-            <span className="cofounder-tag" key={i}><span className="cofounder-tag-dot" />{t}</span>
-          ))}
-        </div>
-        <div className="founder-cta-row">
-          <button className="btn-main" style={{ background: "linear-gradient(135deg,var(--orange),var(--orange2))", boxShadow: "0 8px 32px rgba(245,96,10,.3)" }}>
-            <span>Book a Call with Shyam</span>
-            <svg width="14" height="14" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></svg>
-          </button>
-          <button className="btn-play"><div className="play-ring"><svg width="16" height="16" fill="var(--orange)" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" /></svg></div>His Growth Story</button>
-        </div>
-      </div>
-      <div className="founder-img-col">
-        <div className="cofounder-ring" />
-        <div className="cofounder-ring-2" />
-        <div className="cofounder-blob" />
-        <div className="cofounder-photo-wrap">
-          <div className="founder-photo-inner">
-            <img src={cofounder} alt="Co-Founder of Growthmantra99" className="founder-photo" />
+const CoFounderSection = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const COFOUNDER_SLOTS = [
+    { label: "4 PM – 5 PM",   duration: "60 min session" },
+    { label: "5 PM – 6 PM",   duration: "60 min session" },
+    { label: "7 PM – 8 PM",   duration: "60 min session" },
+    { label: "8 PM – 9 PM",   duration: "60 min session" },
+    { label: "9 PM – 10 PM",  duration: "60 min session" },
+    { label: "10 PM – 11 PM", duration: "60 min session" },
+    { label: "11 PM – 12 AM", duration: "60 min session" },
+  ];
+
+  return (
+    <>
+      <section className="cofounder-section">
+        <div className="founder-inner-reverse">
+          <div className="founder-content-col">
+            <div className="cofounder-eyebrow">Meet the Co-Founder</div>
+            <h2 className="founder-headline">The Strategist Who Turns<br /><span>Data Into Decisions</span><br />&amp; Deals Into Growth</h2>
+            <div className="cofounder-divider" />
+            <div className="cofounder-quote">
+              <span className="cofounder-quote-mark">"</span>
+              <p className="founder-quote-text">A great B2B strategy isn't built on gut instinct — it's built on the right data, the right accounts, and the relentless will to execute.</p>
+            </div>
+            <p className="founder-body">Shyam Jha co-founded Growthmantra99 with a clear mandate: <strong>make B2B marketing accountable, measurable, and genuinely effective.</strong> With a background spanning enterprise technology sales, growth analytics, and go-to-market strategy at some of India's fastest-scaling B2B companies, Shyam brings a rare combination of analytical rigour and creative execution to every client engagement.</p>
+            <p className="founder-body">He architected Growthmantra99's proprietary <strong>Revenue Attribution Framework</strong> — the system that connects every outreach touchpoint back to closed-won revenue.</p>
+            <div className="founder-stats-row">
+              {[{ val: "2+", lbl: "Years in Growth Strategy" }, { val: "5+", lbl: "GTM Launches Led" }, { val: "Zero", lbl: "Vanity Metrics Reported" }, { val: "B.Tech", lbl: "Education" }].map((s, i) => (
+                <div className="founder-stat" key={i}><div className="founder-stat-val">{s.val}</div><div className="founder-stat-lbl">{s.lbl}</div></div>
+              ))}
+            </div>
+            <div className="founder-tags">
+              {["Revenue Attribution", "GTM Strategy", "Data Analytics", "ABM Architecture", "Marketing Ops", "CRM Systems", "Demand Generation", "Growth Reporting"].map((t, i) => (
+                <span className="cofounder-tag" key={i}><span className="cofounder-tag-dot" />{t}</span>
+              ))}
+            </div>
+            <div className="founder-cta-row">
+              <button
+                className="btn-main"
+                style={{ background: "linear-gradient(135deg,var(--orange),var(--orange2))", boxShadow: "0 8px 32px rgba(245,96,10,.3)" }}
+                onClick={() => setModalOpen(true)}
+              >
+                <span>Book a Call with Shyam</span>
+                <svg width="14" height="14" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></svg>
+              </button>
+              <button className="btn-play">
+                <div className="play-ring"><svg width="16" height="16" fill="var(--orange)" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" /></svg></div>
+                His Growth Story
+              </button>
+            </div>
           </div>
-          <div className="founder-badge-1">
-            <div className="fb-ico" style={{ background: "rgba(245,96,10,.1)" }}>📊</div>
-            <div><div className="fb-val">Data-Driven</div><div className="fb-lbl">Growth Strategist</div></div>
-          </div>
-          <div className="founder-badge-2">
-            <div className="fb-ico" style={{ background: "rgba(124,58,237,.1)" }}>🏆</div>
-            <div><div className="fb-val">25+ GTM Launches</div><div className="fb-lbl">Revenue-Attributed</div></div>
+          <div className="founder-img-col">
+            <div className="cofounder-ring" />
+            <div className="cofounder-ring-2" />
+            <div className="cofounder-blob" />
+            <div className="cofounder-photo-wrap">
+              <div className="founder-photo-inner">
+                <img src={cofounder} alt="Co-Founder of Growthmantra99" className="founder-photo" />
+              </div>
+              <div className="founder-badge-1">
+                <div className="fb-ico" style={{ background: "rgba(245,96,10,.1)" }}>📊</div>
+                <div><div className="fb-val">Data-Driven</div><div className="fb-lbl">Growth Strategist</div></div>
+              </div>
+              <div className="founder-badge-2">
+                <div className="fb-ico" style={{ background: "rgba(124,58,237,.1)" }}>🏆</div>
+                <div><div className="fb-val">25+ GTM Launches</div><div className="fb-lbl">Revenue-Attributed</div></div>
+              </div>
+            </div>
+            <div className="founder-nameplate">
+              <div className="founder-name">Shyam Jha</div>
+              <div className="cofounder-role-pill"><div className="founder-role-dot" />Co-Founder &amp; COO</div>
+              <div className="founder-socials">
+                {[{ s: "li", label: "LinkedIn" }, { s: "tw", label: "Twitter" }, { s: "ig", label: "Instagram" }].map(({ s, label }) => (
+                  <div className="cofounder-soc-btn" key={s} title={label}><SocIcon s={s} /></div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-        <div className="founder-nameplate">
-          <div className="founder-name">Shyam Jha</div>
-          <div className="cofounder-role-pill"><div className="founder-role-dot" />Co-Founder &amp; COO</div>
-          <div className="founder-socials">
-            {[{ s: "li", label: "LinkedIn" }, { s: "tw", label: "Twitter" }, { s: "ig", label: "Instagram" }].map(({ s, label }) => (
-              <div className="cofounder-soc-btn" key={s} title={label}><SocIcon s={s} /></div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-);
+      </section>
+
+      <BookingModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        person="cofounder"
+        photo={cofounder}
+        name="Shyam Jha"
+        role="Co-Founder & COO"
+        email="sjha23234@gmail.com"
+        slots={COFOUNDER_SLOTS}
+        accentGrad="linear-gradient(135deg,#5c1500 0%,#c44700 40%,#f5600a 70%,#ff8533 100%)"
+        ctaClass="bm-cta-orange"
+        selClass="sel-orange"
+      />
+    </>
+  );
+};
 
 const TeamConnector = () => (
   <div className="team-connector">
@@ -1518,7 +1435,7 @@ const MissionVision = () => (
 );
 
 /* ════════════════════════════════
-   LANDING PAGE
+   LANDING PAGE COMPONENTS
 ════════════════════════════════ */
 const Hero = ({ setPage }) => (
   <section className="hero">
@@ -1656,20 +1573,172 @@ const CTABand = () => (
   </div>
 );
 
-const LandingPage = ({ setPage }) => (
-  <main>
-    <Hero setPage={setPage} />
-    <Marquee />
-    <WhyUs />
-    <FounderSection />
-    <TeamConnector />
-    <CoFounderSection />
-    <MissionVision />
-    <Testimonials />
-    <CTABand />
-    <Footer setPage={setPage} />
-  </main>
-);
+const SECTORS = [
+  { group: "Marketing & Growth", options: ["B2B Lead Generation","Digital Marketing Agency","Performance Marketing","Content Marketing","SEO & SEM"] },
+  { group: "Technology & IT", options: ["IT Services & Consulting","SaaS & Software Products","Cybersecurity","Cloud & Infrastructure","AI & Data Analytics"] },
+  { group: "Real Estate & Infrastructure", options: ["Commercial Real Estate","Residential Real Estate","PropTech","Construction & Engineering"] },
+  { group: "Finance & Professional Services", options: ["Fintech & NBFC","Banking & Insurance","Accounting & CA Firms","Legal & Compliance","Management Consulting"] },
+  { group: "Healthcare & Life Sciences", options: ["Healthcare B2B","MedTech & Pharma","Hospital & Clinic Chain"] },
+  { group: "Industry & Operations", options: ["Manufacturing","Logistics & Supply Chain","Export & Import","Retail & E-commerce"] },
+  { group: "Education & Training", options: ["EdTech","Corporate Training","Higher Education"] },
+];
+
+const ContactSection = ({ contactRef }) => {
+  const [form, setForm] = useState({ name:"", email:"", phone:"", company:"", address:"", sector:"", otherSector:"", query:"" });
+  const set = (k, v) => setForm(f => ({ ...f, [k]: v }));
+  const showOther = form.sector === "Other";
+
+  const handleSend = () => {
+    if (!form.name || !form.email || !form.phone || !form.sector || !form.query) {
+      alert("Please fill in all required fields (Name, Email, Phone, Sector, and Query).");
+      return;
+    }
+    const sector = showOther ? (form.otherSector || "Other") : form.sector;
+    const subject = encodeURIComponent(`Business Enquiry — ${form.company || form.name} | Growthmantra99`);
+    const body = encodeURIComponent(
+`Dear Growthmantra99 Team,
+
+I would like to get in touch regarding your B2B growth marketing services. Please find my details below.
+
+─────────────────────────────
+CONTACT DETAILS
+─────────────────────────────
+Full Name    : ${form.name}
+Email        : ${form.email}
+Phone        : ${form.phone}
+Company      : ${form.company || "N/A"}
+Address      : ${form.address || "N/A"}
+Industry     : ${sector}
+
+─────────────────────────────
+MY QUERY
+─────────────────────────────
+${form.query}
+
+─────────────────────────────
+
+I look forward to hearing from you.
+
+Warm regards,
+${form.name}
+${form.company ? form.company + "\n" : ""}${form.phone}`
+    );
+    window.open(`https://mail.google.com/mail/?view=cm&to=growthmantra99%40gmail.com&su=${subject}&body=${body}`, "_blank");
+  };
+
+  return (
+    <section className="contact-section" ref={contactRef} id="contact">
+      <div className="ct-inner">
+        <div className="sec-lbl">Get in Touch</div>
+        <h2 className="sec-h2">Let's Talk About<br />Your B2B Growth</h2>
+        <p className="sec-p">Fill in your details and we'll respond within one business day — or click the button to send us a message right away.</p>
+
+        <div className="ct-layout">
+          {/* Info column */}
+          <div className="ct-info-col">
+            {[
+              { ico:"📍", bg:"rgba(21,88,214,.08)", lbl:"Office", val:"Karkend Bajar, Dhanbad (Jharkhand), India" },
+              { ico:"📞", bg:"rgba(245,158,11,.1)",  lbl:"Phone",  val:"+91 6204132195" },
+              { ico:"✉️", bg:"rgba(34,197,94,.1)",   lbl:"Email",  val:"growthmantra99@gmail.com" },
+              { ico:"🕒", bg:"rgba(245,96,10,.08)",  lbl:"Hours",  val:"Mon – Sat · 9 AM to 7 PM IST" },
+            ].map((c,i) => (
+              <div className="ct-info-card" key={i}>
+                <div className="ct-ic-icon" style={{ background: c.bg }}>{c.ico}</div>
+                <div><div className="ct-ic-lbl">{c.lbl}</div><div className="ct-ic-val">{c.val}</div></div>
+              </div>
+            ))}
+            <div className="ct-promise">
+              <div className="ct-pr-title">What to expect</div>
+              {["Response within 1 business day","Free 30-min strategy consultation","No lock-in · No pressure","Senior specialist assigned to you"].map((t,i) => (
+                <div className="ct-pr-item" key={i}>
+                  <div className="ct-pr-dot">✓</div>
+                  {t}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Form column */}
+          <div className="ct-form-card">
+            <div className="ct-form-accent" />
+            <div className="ct-form-body">
+              <div className="ct-form-grid">
+                <div className="ct-field">
+                  <label>Full Name *</label>
+                  <input className="ct-input" placeholder="e.g. Rahul Mehta" value={form.name} onChange={e => set("name", e.target.value)} />
+                </div>
+                <div className="ct-field">
+                  <label>Email Address *</label>
+                  <input className="ct-input" type="email" placeholder="you@company.com" value={form.email} onChange={e => set("email", e.target.value)} />
+                </div>
+                <div className="ct-field">
+                  <label>Phone Number *</label>
+                  <input className="ct-input" type="tel" placeholder="+91 98765 43210" value={form.phone} onChange={e => set("phone", e.target.value)} />
+                </div>
+                <div className="ct-field">
+                  <label>Company Name</label>
+                  <input className="ct-input" placeholder="Your Company Ltd." value={form.company} onChange={e => set("company", e.target.value)} />
+                </div>
+                <div className="ct-field ct-full">
+                  <label>Address</label>
+                  <input className="ct-input" placeholder="City, State, Country" value={form.address} onChange={e => set("address", e.target.value)} />
+                </div>
+                <div className="ct-field ct-full">
+                  <label>Industry / Sector *</label>
+                  <select className="ct-select" value={form.sector} onChange={e => set("sector", e.target.value)}>
+                    <option value="">— Select your sector —</option>
+                    {SECTORS.map((grp, gi) => (
+                      <optgroup label={grp.group} key={gi}>
+                        {grp.options.map((opt, oi) => <option key={oi} value={opt}>{opt}</option>)}
+                      </optgroup>
+                    ))}
+                    <option value="Other">Other (specify below)</option>
+                  </select>
+                  <div className={`ct-other-wrap${showOther ? " open" : ""}`}>
+                    <input className="ct-input" placeholder="Please describe your sector" value={form.otherSector} onChange={e => set("otherSector", e.target.value)} />
+                  </div>
+                </div>
+                <div className="ct-field ct-full">
+                  <label>Your Query *</label>
+                  <textarea className="ct-textarea" placeholder="Tell us about your business goals, current challenges, or what you'd like help with..." value={form.query} onChange={e => set("query", e.target.value)} />
+                </div>
+              </div>
+              <button className="ct-submit" onClick={handleSend}>
+                <svg width="16" height="16" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Send Message via Email
+              </button>
+              <div className="ct-note">
+                <svg width="12" height="12" fill="#22c55e" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Opens Gmail · Free · No commitment required
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const LandingPage = ({ setPage }) => {
+  const contactRef = useRef(null);
+  const scrollToContact = () => contactRef.current?.scrollIntoView({ behavior: "smooth" });
+
+  return (
+    <main>
+      <Hero setPage={setPage} />
+      <Marquee />
+      <WhyUs />
+      <FounderSection />
+      <TeamConnector />
+      <CoFounderSection />
+      <MissionVision />
+      <ContactSection contactRef={contactRef} />  {/* ← add here */}
+      <Testimonials />
+      <CTABand />
+      <Footer setPage={setPage} scrollToContact={scrollToContact} />
+    </main>
+  );
+};
 
 /* ════════════════════════════════
    SERVICES PAGE
@@ -1871,41 +1940,274 @@ const ServiceProcess = () => (
   </section>
 );
 
-const ServicePricing = () => (
-  <section className="svc-pricing">
-    <div className="svc-pricing-inner">
-      <div className="svc-pricing-hdr">
-        <div className="sec-lbl" style={{ justifyContent: "center", color: "rgba(255,255,255,.5)" }}>Transparent Pricing</div>
-        <h2>Invest in Growth,<br />Not Guesswork</h2>
-        <p>Flexible plans built for every stage of B2B growth. No hidden fees, no long lock-ins.</p>
-      </div>
-      <div className="svc-plans">
-        {[
-          { name: "Starter", price: "₹49,999", per: "/month", sub: "Ideal for early-stage B2B startups", popular: false, feats: ["250 targeted leads/month", "LinkedIn + Email outreach", "Basic CRM integration", "Bi-weekly reporting", "Dedicated account manager"], btnStyle: { background: "rgba(255,255,255,.1)", color: "#fff", border: "1.5px solid rgba(255,255,255,.2)" } },
-          { name: "Growth", price: "₹99,999", per: "/month", sub: "Perfect for scaling B2B teams", popular: true, feats: ["750 targeted leads/month", "Full multi-channel outreach", "HubSpot/Salesforce setup", "ABM for top 50 accounts", "Weekly strategy calls", "Revenue attribution dashboard"], btnStyle: { background: "#fff", color: "var(--blue)", border: "none" } },
-          { name: "Enterprise", price: "Custom", per: "", sub: "For complex, high-velocity sales orgs", popular: false, feats: ["Unlimited lead volume", "Dedicated pod (3 specialists)", "Full ABM programme", "Custom integrations", "Executive dashboards", "Quarterly business reviews"], btnStyle: { background: "rgba(255,255,255,.1)", color: "#fff", border: "1.5px solid rgba(255,255,255,.2)" } },
-        ].map((p, i) => (
-          <div className={`svc-plan${p.popular ? " popular" : ""}`} key={i}>
-            <div className="svc-plan-name">{p.name}</div>
-            <div className="svc-plan-price">{p.price}<span>{p.per}</span></div>
-            <div className="svc-plan-sub">{p.sub}</div>
-            <div className="svc-plan-feats">{p.feats.map((f, j) => (
-              <div className="spf" key={j}>
-                <div className="spf-chk" style={{ background: p.popular ? "rgba(34,197,94,.2)" : "rgba(255,255,255,.1)" }}>
-                  <svg width="10" height="10" fill="none" stroke={p.popular ? "#22c55e" : "rgba(255,255,255,.6)"} strokeWidth="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
-                </div>
-                {f}
-              </div>
-            ))}</div>
-            <button className="svc-plan-btn" style={p.btnStyle}>{p.price === "Custom" ? "Talk to Sales →" : "Get Started →"}</button>
+const ServicePricing = () => {
+  const RECIPIENT = "growthmantra99@gmail.com";
+ 
+  const buildGmailUrl = (plan) => {
+    const isYearly = plan === "Yearly";
+ 
+    const subject = encodeURIComponent(
+      `Service Enquiry — ${plan} Lead Generation Plan | Growthmantra99`
+    );
+ 
+    const body = encodeURIComponent(
+`Dear Growthmantra99 Team,
+ 
+I came across your B2B lead generation services and I am interested in getting started with the ${plan} Plan.
+ 
+Please find my details below:
+ 
+─────────────────────────────────
+SELECTED PLAN
+─────────────────────────────────
+Plan Type      : ${plan} Lead Generation
+Investment     : ${isYearly ? "₹2,50,000+ / year (customised)" : "₹30,000+ / month (customised)"}
+ 
+─────────────────────────────────
+MY DETAILS  (please fill in before sending)
+─────────────────────────────────
+Full Name      : [Your Full Name]
+Phone Number   : [Your Phone Number with country code]
+Company Name   : [Your Company / Organisation Name]
+Industry       : [e.g. SaaS, Manufacturing, Healthcare, Fintech, Logistics…]
+Website        : [Your Company Website URL]
+ 
+─────────────────────────────────
+WHAT I AM LOOKING FOR
+─────────────────────────────────
+Primary Goal   : [e.g. Generate qualified leads, Build outbound pipeline, ABM for target accounts…]
+Target Market  : [e.g. CXOs at mid-market SaaS companies in India / SEA]
+Current Status : [e.g. No lead gen system yet / Existing system underperforming]
+ 
+Additional Requirements / Questions:
+[Please share anything else you would like us to know — budget flexibility, timeline expectations, specific challenges, or questions about the service.]
+ 
+─────────────────────────────────
+ 
+I look forward to hearing from you.
+ 
+Warm regards,
+[Your Full Name]
+[Your Designation]
+[Your Company]
+[Your Phone Number]`
+    );
+ 
+    return `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(RECIPIENT)}&su=${subject}&body=${body}`;
+  };
+ 
+  const PLANS = [
+    {
+      id: "Monthly",
+      badge: null,
+      name: "Monthly Plan",
+      price: "₹30,000",
+      priceSuffix: "+",
+      per: "/ month",
+      sub: "Customised lead generation — pay as you grow",
+      highlight: "Flexible month-to-month. No lock-in.",
+      feats: [
+        "ICP-targeted lead generation",
+        "LinkedIn + email outreach",
+        "CRM-ready lead delivery",
+        "Dedicated account specialist",
+        "Monthly performance report",
+      ],
+      grad: "linear-gradient(135deg,#1558d6,#2272ff)",
+      popular: false,
+      btnLabel: "Get Started — Monthly",
+      btnStyle: {
+        background: "rgba(255,255,255,.1)",
+        color: "#fff",
+        border: "1.5px solid rgba(255,255,255,.25)",
+      },
+    },
+    {
+      id: "Yearly",
+      badge: "Best Value",
+      name: "Yearly Plan",
+      price: "₹2,50,000",
+      priceSuffix: "+",
+      per: "/ year",
+      sub: "Customised lead generation — maximum pipeline impact",
+      highlight: "Annual commitment · Priority support.",
+      feats: [
+        "Everything in Monthly",
+        "Priority campaign setup",
+        "Quarterly strategy reviews",
+        "Revenue attribution dashboard",
+        "Dedicated senior strategist",
+      ],
+      grad: "linear-gradient(135deg,#f5600a,#ff8533)",
+      popular: true,
+      btnLabel: "Get Started — Yearly",
+      btnStyle: {
+        background: "#fff",
+        color: "var(--blue)",
+        border: "none",
+        fontWeight: 800,
+      },
+    },
+  ];
+ 
+  return (
+    <section className="svc-pricing">
+      <div className="svc-pricing-inner">
+        {/* ── Header ── */}
+        <div className="svc-pricing-hdr">
+          <div
+            className="sec-lbl"
+            style={{ justifyContent: "center", color: "rgba(255,255,255,.5)" }}
+          >
+            Transparent Pricing
           </div>
-        ))}
+          <h2>
+            Simple Plans,<br />Serious Results
+          </h2>
+          <p>
+            Two straightforward options — both fully customised to your business
+            goals. No hidden fees, no long lock-ins.
+          </p>
+        </div>
+ 
+        {/* ── Plan Cards ── */}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(2, 1fr)",
+            gap: 24,
+            maxWidth: 860,
+            margin: "0 auto",
+          }}
+        >
+          {PLANS.map((p) => (
+            <div
+              key={p.id}
+              className={`svc-plan${p.popular ? " popular" : ""}`}
+              style={{ position: "relative" }}
+            >
+              {/* Best Value badge (replaces the hard-coded "Most Popular" ::before) */}
+              {p.badge && (
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 16,
+                    right: 16,
+                    background: "var(--orange)",
+                    color: "#fff",
+                    fontSize: ".68rem",
+                    fontWeight: 800,
+                    padding: "4px 12px",
+                    borderRadius: 20,
+                    letterSpacing: ".05em",
+                    textTransform: "uppercase",
+                    zIndex: 2,
+                  }}
+                >
+                  {p.badge}
+                </div>
+              )}
+ 
+              {/* Plan name */}
+              <div className="svc-plan-name">{p.name}</div>
+ 
+              {/* Price */}
+              <div className="svc-plan-price">
+                {p.price}
+                <span style={{ fontSize: "1.4rem", fontWeight: 700, color: "#fff" }}>
+                  {p.priceSuffix}
+                </span>
+                <span>{p.per}</span>
+              </div>
+ 
+              {/* Sub-heading */}
+              <div className="svc-plan-sub">{p.sub}</div>
+ 
+              {/* Highlight pill */}
+              <div
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 6,
+                  background: "rgba(255,255,255,.08)",
+                  border: "1px solid rgba(255,255,255,.14)",
+                  borderRadius: 50,
+                  padding: "5px 14px",
+                  fontSize: ".72rem",
+                  fontWeight: 700,
+                  color: "rgba(255,255,255,.7)",
+                  marginBottom: 20,
+                }}
+              >
+                ✦ {p.highlight}
+              </div>
+ 
+              {/* Feature list */}
+              <div className="svc-plan-feats">
+                {p.feats.map((f, j) => (
+                  <div className="spf" key={j}>
+                    <div
+                      className="spf-chk"
+                      style={{
+                        background: p.popular
+                          ? "rgba(34,197,94,.2)"
+                          : "rgba(255,255,255,.1)",
+                      }}
+                    >
+                      <svg
+                        width="10"
+                        height="10"
+                        fill="none"
+                        stroke={p.popular ? "#22c55e" : "rgba(255,255,255,.6)"}
+                        strokeWidth="2.5"
+                        viewBox="0 0 24 24"
+                      >
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    </div>
+                    {f}
+                  </div>
+                ))}
+              </div>
+ 
+              {/* CTA — opens Gmail with pre-filled email */}
+              <a
+                href={buildGmailUrl(p.id)}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+              >
+                <button className="svc-plan-btn" style={p.btnStyle} type="button">
+                  {p.btnLabel} →
+                </button>
+              </a>
+            </div>
+          ))}
+        </div>
+ 
+        {/* ── Footer note ── */}
+        <p
+          style={{
+            textAlign: "center",
+            color: "rgba(255,255,255,.3)",
+            fontSize: ".82rem",
+            marginTop: 32,
+            lineHeight: 1.7,
+          }}
+        >
+          All plans are fully customised to your business.{" "}
+          <span style={{ color: "rgba(255,255,255,.5)", fontWeight: 600 }}>
+            Pricing is indicative — final scope and cost are confirmed after your
+            free strategy call.
+          </span>
+          <br />
+          No credit card required · Cancel anytime · Free 30-min consultation
+          included.
+        </p>
       </div>
-      <p style={{ textAlign: "center", color: "rgba(255,255,255,.3)", fontSize: ".82rem", marginTop: 28 }}>All plans include a 30-day free strategy consultation. Cancel anytime.</p>
-    </div>
-  </section>
-);
-
+    </section>
+  );
+};
 const ServiceIndustries = () => (
   <section className="svc-industries">
     <div className="svc-ind-inner">
@@ -1965,62 +2267,21 @@ const ServicesPage = ({ setPage }) => (
 );
 
 /* ════════════════════════════════
-   TEAM PAGE — 4 real members with photos
+   TEAM PAGE
 ════════════════════════════════ */
-
-/**
- * TEAM data — each member has:
- *   img       : imported image
- *   name      : display name
- *   role      : role label shown on the card
- *   bio       : description shown on hover overlay
- *   linkedin  : URL (null if not applicable)
- *   grad      : gradient used for the top accent bar
- */
 const TEAM = [
-  {
-    img: founder,
-    name: "Shivam Sharma",
-    role: "Founder",
-    bio: "Visionary B2B growth strategist and founder of Growthmantra99. Shivam has spent 8+ years building outbound sales systems and pipeline architectures for high-growth startups and enterprise teams across India.",
-    linkedin: null,
-    grad: "linear-gradient(135deg,#1558d6,#5b9eff)",
-  },
-  {
-    img: cofounder,
-    name: "Shyam Jha",
-    role: "Co-Founder",
-    bio: "Revenue attribution architect and GTM strategist. Shyam co-founded Growthmantra99 to make B2B marketing genuinely accountable — connecting every campaign touchpoint directly to closed-won revenue.",
-    linkedin: null,
-    grad: "linear-gradient(135deg,#f5600a,#ff8533)",
-  },
-  {
-    img: Neha,
-    name: "Neha Sharma",
-    role: "Business Analyst",
-    bio: "Sharp analytical mind with a deep focus on market research, lead qualification, and data-driven insights. Neha turns complex data into clear actions that accelerate the sales pipeline.",
-    linkedin: "https://www.linkedin.com/in/neha-sharma-b98a9a266",
-    grad: "linear-gradient(135deg,#7c3aed,#a855f7)",
-    contain: true,
-    bgTint: "linear-gradient(160deg,#f5f0ff 0%,#ede8fa 100%)",
-  },
-  {
-    img: Sheetal,
-    name: "Sheetal Agarwal",
-    role: "Business Analyst",
-    bio: "Strategic business analyst specialising in ICP research, prospect segmentation, and opportunity mapping. Sheetal ensures every campaign is grounded in solid data and targets the right decision-makers.",
-    linkedin: "https://www.linkedin.com/in/sheetal-sharma-8000a425b",
-    grad: "linear-gradient(135deg,#0891b2,#06b6d4)",
-    contain: true,
-    bgTint: "linear-gradient(160deg,#e8f7fb 0%,#d6eff6 100%)",
-  },
+  { img: founder, name: "Shivam Sharma", role: "Founder", bio: "Visionary B2B growth strategist and founder of Growthmantra99. Shivam has spent 8+ years building outbound sales systems and pipeline architectures for high-growth startups and enterprise teams across India.", linkedin: null, grad: "linear-gradient(135deg,#1558d6,#5b9eff)" },
+  { img: cofounder, name: "Shyam Jha", role: "Co-Founder", bio: "Revenue attribution architect and GTM strategist. Shyam co-founded Growthmantra99 to make B2B marketing genuinely accountable — connecting every campaign touchpoint directly to closed-won revenue.", linkedin: null, grad: "linear-gradient(135deg,#f5600a,#ff8533)" },
+  { img: Neha, name: "Neha Sharma", role: "Business Analyst", bio: "Sharp analytical mind with a deep focus on market research, lead qualification, and data-driven insights. Neha turns complex data into clear actions that accelerate the sales pipeline.", linkedin: "https://www.linkedin.com/in/neha-sharma-b98a9a266", grad: "linear-gradient(135deg,#7c3aed,#a855f7)", contain: true, bgTint: "linear-gradient(160deg,#f5f0ff 0%,#ede8fa 100%)" },
+  { img: Sheetal, name: "Sheetal Sharma", role: "Business Analyst", bio: "Strategic business analyst specialising in ICP research, prospect segmentation, and opportunity mapping. Sheetal ensures every campaign is grounded in solid data and targets the right decision-makers.", linkedin: "https://www.linkedin.com/in/sheetal-sharma-8000a425b", grad: "linear-gradient(135deg,#0891b2,#06b6d4)", contain: true, bgTint: "linear-gradient(160deg,#e8f7fb 0%,#d6eff6 100%)" },
+  { img: swati, name: "Swati Sharma", role: "Social Media Manager", bio: "Creative social media strategist with a sharp eye for B2B brand storytelling. Swati builds high-impact LinkedIn and social campaigns that grow engaged audiences and convert followers into pipeline.", linkedin: null, grad: "linear-gradient(135deg,#db2777,#f472b6)", contain: false },
 ];
 
 const EXPERTISE = [
   { ico: "🧭", bg: "linear-gradient(135deg,#1558d6,#2272ff)", title: "Strategic Planning", desc: "Custom marketing roadmaps built around your exact goals to maximize ROI.", tags: ["Market Research", "Competitor Analysis", "Growth Roadmap"] },
   { ico: "🎨", bg: "linear-gradient(135deg,#f5600a,#ff8533)", title: "Creative Campaigns", desc: "Bold, memorable campaigns that cut through the noise and make your brand impossible to ignore.", tags: ["Ad Creatives", "Video Production", "Copywriting"] },
   { ico: "📊", bg: "linear-gradient(135deg,#7c3aed,#a855f7)", title: "Analytics & Reporting", desc: "Deep insights and transparent reporting so you always know exactly where your growth is coming from.", tags: ["Real-time Dashboards", "Monthly Reports", "A/B Testing"] },
-  { ico: "🤝", bg: "linear-gradient(135deg,#059669,#10b981)", title: "Client Success", desc: "Your dedicated success partner — available 24/7 to ensure campaigns perform at their absolute peak.", tags: ["24/7 Support", "Dedicated Manager", "Quarterly Reviews"] },
+  { ico: "🤝", bg: "linear-gradient(135deg,#059669,#10b981)", title: "Client Success", desc: "Your dedicated success partner — available to ensure campaigns perform at their absolute peak.", tags: ["24/7 Support", "Dedicated Manager", "Quarterly Reviews"] },
 ];
 
 const CULTURE = [
@@ -2031,7 +2292,6 @@ const CULTURE = [
 
 const TeamPage = ({ setPage }) => (
   <div className="team-page">
-    {/* ── Hero ── */}
     <section className="team-hero">
       <div className="team-hero-dots" />
       <div className="team-hero-inner">
@@ -2050,59 +2310,32 @@ const TeamPage = ({ setPage }) => (
       </div>
     </section>
 
-    {/* ── Team Cards ── */}
     <section className="sec">
       <div className="ctr" style={{ marginBottom: 48 }}>
         <div className="sec-lbl">Our Experts</div>
-        <h2 className="sec-h2">4 Specialists.<br />One Shared Mission.</h2>
+        <h2 className="sec-h2">5 Specialists.<br />One Shared Mission.</h2>
         <p className="sec-p">A focused team of B2B specialists — each chosen for their domain depth and genuine passion for helping businesses grow.</p>
       </div>
-
-      {/* 4-column grid — collapses to 2 on mobile */}
       <div className="team-g">
         {TEAM.map((m, i) => (
           <div className="tm" key={i}>
-            {/* ── Photo + hover overlay ── */}
             <div className="tm-img" style={m.contain ? { background: m.bgTint } : {}}>
-              {/* Top accent bar using member's gradient */}
-              <div style={{
-                position: "absolute", top: 0, left: 0, right: 0, height: 3,
-                background: m.grad, zIndex: 2
-              }} />
-
-              <img
-                src={m.img}
-                alt={m.name}
-                className={m.contain ? "tm-photo-contain" : "tm-photo"}
-              />
-
-              {/* Hover overlay — bio + LinkedIn */}
+              <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: m.grad, zIndex: 2 }} />
+              <img src={m.img} alt={m.name} className={m.contain ? "tm-photo-contain" : "tm-photo"} />
               <div className="tm-ov">
                 <p className="tm-bio">{m.bio}</p>
                 <div className="tm-soc">
-                  {/* LinkedIn — only shown when URL provided */}
                   {m.linkedin && (
-                    <a
-                      href={m.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="tm-sb"
-                      title="LinkedIn Profile"
-                    >
+                    <a href={m.linkedin} target="_blank" rel="noopener noreferrer" className="tm-sb" title="LinkedIn Profile">
                       <LinkedInIcon />
                     </a>
                   )}
                 </div>
               </div>
             </div>
-
-            {/* ── Name + Role ── */}
             <div className="tm-body">
               <div className="tm-name">{m.name}</div>
-              <span className="tm-role" style={{
-                background: m.grad.replace("linear-gradient(135deg,", "rgba(").replace(")", ",0.1)"),
-                color: "var(--blue)"
-              }}>{m.role}</span>
+              <span className="tm-role">{m.role}</span>
               <div className="tm-divider" style={{ background: m.grad }} />
             </div>
           </div>
@@ -2110,7 +2343,6 @@ const TeamPage = ({ setPage }) => (
       </div>
     </section>
 
-    {/* ── Expertise ── */}
     <div className="exp-wrap">
       <div className="ctr" style={{ marginBottom: 48 }}>
         <div className="sec-lbl">What We Excel At</div>
@@ -2128,7 +2360,6 @@ const TeamPage = ({ setPage }) => (
       </div>
     </div>
 
-    {/* ── Culture ── */}
     <section className="culture">
       <div className="ctr" style={{ marginBottom: 44, position: "relative", zIndex: 1 }}>
         <div className="sec-lbl" style={{ color: "rgba(255,255,255,.6)", justifyContent: "center" }}>Why We're Different</div>
@@ -2141,7 +2372,6 @@ const TeamPage = ({ setPage }) => (
       </div>
     </section>
 
-    {/* ── Together ── */}
     <section className="sec">
       <div className="together">
         <div className="tog-l">
@@ -2156,12 +2386,9 @@ const TeamPage = ({ setPage }) => (
           <button className="btn-main" style={{ marginTop: 32, display: "inline-flex" }}><span>Start Your Journey</span><svg width="14" height="14" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></svg></button>
         </div>
         <div className="tog-r">
-          {/* Avatar stack using real photos */}
           <div className="av-stack">
             {TEAM.map((m, i) => (
-              <div key={i} className="av-sm">
-                <img src={m.img} alt={m.name} />
-              </div>
+              <div key={i} className="av-sm"><img src={m.img} alt={m.name} /></div>
             ))}
           </div>
           <div className="tog-metric">
